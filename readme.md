@@ -6,6 +6,8 @@ neutralwm is a collection of small scripts and programs which come together to m
 
 ## kebabwm
 
+kebabwm is the first version of neutralwm. the base wm is just a copy of tiny wm's python version, and the shortcuts are handled using sxhd. good luck.
+
 to install:
 
 ~~~
@@ -19,9 +21,9 @@ cp launch ~/.launch
 
 to use:
 
-edit your ~/.xinitrc to read "bash ~/.launch"
-win + z to draw a terminal
-wix + q to quit a terminal
+- edit your ~/.xinitrc to read "bash ~/.launch"
+- win + z to draw a terminal
+- wix + q to quit a terminal
 
 
 
