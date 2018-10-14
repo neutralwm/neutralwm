@@ -2,6 +2,3 @@
 
 read w h x y < <(slop -f '%w %h %x %y')
 rxvt-unicode -g "$((w/8))x$((h/16))+$x+$y" &
-sleep 0.2
-chwb -s 10 -c 0xafafaf $(lsw)
-chwb2 -i 2 -o 9 -I fefefe -O 17262d $(lsw)

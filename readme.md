@@ -2,6 +2,13 @@
 
 neutralwm is a collection of small scripts and programs which come together to make a window manager. It was made in less than a week.
 
+## philosophy
+
+- small, fast, not anymore than it needs to be.
+- fixed release
+- bloatless
+- open to config
+
 # versions:
 
 ## kebabwm
