@@ -38,8 +38,9 @@ while 1:
 		#draw
 		if keycode == 52:
 			script_path = os.path.dirname(os.path.realpath(__file__)) + '/draw_term'
+			print(script_path)
 			subprocess.call(script_path)
-			subprocess.call("chwb -s 8 -c 0xafafaf $(lsw)", shell=True)
+			subprocess.call("sleep 0.2; chwb -s 8 -c 0xafafaf $(lsw)", shell=True)
 			subprocess.call("chwb2 -i 1 -o 9 -I 113756 -O $(xrdb -query | head -n 2 | tail -n 1 | cut -c 16-) $(lsw)", shell=True)
 	if ev.type == X.KeyRelease:
 		#key up

@@ -1,0 +1,69 @@
+Warning: Failed to grab X keyboard.
+         This happens when something has already grabbed your keybaord.
+         slop should still run properly though.
+Warning: Failed to grab the keyboard. This is non-fatal, keyboard presses might fall through to other applications.
+Warning: Failed to grab X keyboard.
+         This happens when something has already grabbed your keybaord.
+         slop should still run properly though.
+Warning: Failed to grab the keyboard. This is non-fatal, keyboard presses might fall through to other applications.
+chwb2: warning: pixmap is greater than border size
+Warning: Failed to grab X keyboard.
+         This happens when something has already grabbed your keybaord.
+         slop should still run properly though.
+Warning: Failed to grab the keyboard. This is non-fatal, keyboard presses might fall through to other applications.
+chwb2: warning: pixmap is greater than border size
+Warning: Failed to grab X keyboard.
+         This happens when something has already grabbed your keybaord.
+         slop should still run properly though.
+Warning: Failed to grab the keyboard. This is non-fatal, keyboard presses might fall through to other applications.
+chwb2: warning: pixmap is greater than border size
+chwb2: warning: pixmap is greater than border size
+('key down', 24)
+key up
+key up
+('key down', 52)
+key up
+key up
+button down
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+move
+button up
+('key down', 52)
+key up
+key up
+Traceback (most recent call last):
+  File "cocainewm.py", line 23, in <module>
+    ev = dpy.next_event()
+  File "/home/mao/.local/lib/python2.7/site-packages/Xlib/display.py", line 187, in next_event
+    return self.display.next_event()
+  File "/home/mao/.local/lib/python2.7/site-packages/Xlib/protocol/display.py", line 218, in next_event
+    self.send_and_recv(event = 1)
+  File "/home/mao/.local/lib/python2.7/site-packages/Xlib/protocol/display.py", line 610, in send_and_recv
+    raise self.socket_error
+Xlib.error.ConnectionClosedError: Display connection closed by server
+urxvt: X connection to ':0' broken, unable to recover, exiting.
+urxvt: X connection to ':0' broken, unable to recover, exiting.
+urxvt: X connection to ':0' broken, unable to recover, exiting.
+urxvt: X connection to ':0' broken, unable to recover, exiting.
