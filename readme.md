@@ -11,6 +11,30 @@ neutralwm is a collection of small scripts and programs which come together to m
 
 # versions:
 
+## cocainewm (latest)
+
+![screenshot](https://0x0.st/sEMj.png)
+
+cocainewm is the second version of cocainewm. it is entirely written in python, and does not rely on sxhkd. it is much easier to install.
+
+to install:
+
+~~~
+
+git clone https://github.com/torvim/neutralwm
+
+~~~
+
+to use:
+
+- edit your ~/.xinitrc to read "python <clone location>"
+- win + z to draw a terminal
+- wix + q to quit a terminal
+- wix + a to ascend a terminal
+- hover over a terminal to select
+- alt + right click to resize window
+- alt + left to grab a window
+
 ## kebabwm
 
 ![screenshot](https://0x0.st/sghR.png)
