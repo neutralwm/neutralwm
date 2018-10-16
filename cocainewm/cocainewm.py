@@ -3,6 +3,8 @@ from Xlib import X, XK
 import os
 import subprocess
 
+double_border = True
+
 dpy = Display()
 
 # ascend window
@@ -38,10 +40,10 @@ while 1:
 		#draw
 		if keycode == 52:
 			script_path = os.path.dirname(os.path.realpath(__file__)) + '/draw_term'
-			print(script_path)
 			subprocess.call(script_path)
-			subprocess.call("sleep 0.2; chwb -s 8 -c 0xafafaf $(lsw)", shell=True)
-			subprocess.call("chwb2 -i 1 -o 9 -I 113756 -O $(xrdb -query | head -n 2 | tail -n 1 | cut -c 16-) $(lsw)", shell=True)
+			if double_border:
+				subprocess.call("sleep 0.2; chwb -s 8 -c 0xafafaf $(lsw)", shell=True)
+				subprocess.call("chwb2 -i 1 -o 9 -I 424365 -O $(xrdb -query | head -n 2 | tail -n 1 | cut -c 16-) $(lsw)", shell=True)
 	if ev.type == X.KeyRelease:
 		#key up
 		print("key up")
@@ -54,6 +56,7 @@ while 1:
 		attr = ev.child.get_geometry()
 		startbutton = ev
 	if startbutton:
+		#dpy.screen().root.fill_rectangle(startbutton.child.create_gc(display=dpy), 10, 10, 300, 20)
 		# window moving
 		print('move')
 		xdiff = ev.root_x - startbutton.root_x
