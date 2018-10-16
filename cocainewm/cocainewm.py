@@ -4,6 +4,7 @@ import os
 import subprocess
 
 double_border = True
+double_border_colour = "424365"
 
 dpy = Display()
 
@@ -43,7 +44,7 @@ while 1:
 			subprocess.call(script_path)
 			if double_border:
 				subprocess.call("sleep 0.2; chwb -s 8 -c 0xafafaf $(lsw)", shell=True)
-				subprocess.call("chwb2 -i 1 -o 9 -I 424365 -O $(xrdb -query | head -n 2 | tail -n 1 | cut -c 16-) $(lsw)", shell=True)
+				subprocess.call("chwb2 -i 1 -o 9 -I " + double_border_colour + " -O $(xrdb -query | head -n 2 | tail -n 1 | cut -c 16-) $(lsw)", shell=True)
 	if ev.type == X.KeyRelease:
 		#key up
 		print("key up")
