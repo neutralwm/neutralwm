@@ -27,7 +27,7 @@ git clone https://github.com/torvim/neutralwm
 
 to use:
 
-- edit your ~/.xinitrc to read "python <clone location>"
+- edit your ~/.xinitrc to read "python (clone location)"
 - win + z to draw a terminal
 - wix + q to quit a terminal
 - wix + a to ascend a terminal
