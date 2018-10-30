@@ -67,3 +67,9 @@ urxvt: X connection to ':0' broken, unable to recover, exiting.
 urxvt: X connection to ':0' broken, unable to recover, exiting.
 urxvt: X connection to ':0' broken, unable to recover, exiting.
 urxvt: X connection to ':0' broken, unable to recover, exiting.
+Warning: Failed to grab X keyboard.
+         This happens when something has already grabbed your keybaord.
+         slop should still run properly though.
+Warning: Failed to grab the keyboard. This is non-fatal, keyboard presses might fall through to other applications.
+chwb2: warning: pixmap is greater than border size
+urxvt: X connection to ':0' broken, unable to recover, exiting.
