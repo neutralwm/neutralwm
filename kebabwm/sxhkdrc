@@ -1,4 +1,0 @@
-super + z
-	bash ~/code/neutral/kebabwm/draw_term
-super + q
-	xkill -id (slop -f '%id')

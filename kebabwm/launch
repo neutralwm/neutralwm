@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-INSTALL_LOCATION=~/code/neutral/kebabwm
-python $INSTALL_LOCATION/kebabwm.py &
-xrdb ~/.Xresources &
-rxvt-unicode &
-sxhkd -c $INSTALL_LOCATION/sxhkdrc

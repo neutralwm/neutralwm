@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-read w h x y < <(slop -f '%w %h %x %y')
-rxvt-unicode -g "$((w/8))x$((h/16))+$x+$y" &
-sleep 0.2
-chwb -s 8 -c 0xafafaf $(lsw)
-chwb2 -i 1 -o 9 -I 113756 -O $(xrdb -query | head -n 2 | tail -n 1 | cut -c 16-) $(lsw)
